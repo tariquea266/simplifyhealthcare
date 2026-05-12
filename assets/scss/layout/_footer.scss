@@ -1,0 +1,124 @@
+// ========================================
+// Layout: Footer
+// ========================================
+
+.footer {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: var(--spacing-20) 0 var(--spacing-8);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: var(--spacing-16);
+  margin-bottom: var(--spacing-16);
+}
+
+// ----------------------------------------
+// Footer Brand
+// ----------------------------------------
+
+.footer-brand {
+  .logo {
+    margin-bottom: var(--spacing-6);
+    filter: brightness(0) invert(1);
+
+    .logo-icon { background: var(--color-accent); }
+    .logo-text  { color: var(--color-white); }
+  }
+
+  p {
+    color: var(--color-gray-400);
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-6);
+  }
+}
+
+// ----------------------------------------
+// Social Links
+// WCAG 2.5.5: min 44px touch target
+// ----------------------------------------
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+
+  a {
+    width: 2.75rem;
+    height: 2.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    transition: all var(--transition-base);
+
+    &:hover {
+      background: var(--color-accent);
+      transform: translateY(-0.125rem);
+    }
+  }
+}
+
+// ----------------------------------------
+// Footer Links Grid
+// ----------------------------------------
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-8);
+}
+
+.footer-column {
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: var(--spacing-3);
+
+      a {
+        font-size: var(--font-size-sm);
+        color: var(--color-gray-400);
+        transition: color var(--transition-fast);
+
+        &:hover { color: var(--color-white); }
+      }
+    }
+  }
+}
+
+// ----------------------------------------
+// Footer Bottom Bar
+// ----------------------------------------
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-8);
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
+
+  p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    filter: brightness(1);
+  }
+}
+
+.legal-links {
+  display: flex;
+  gap: var(--spacing-6);
+
+  a {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+    filter: brightness(1);
+
+    &:hover { color: var(--color-white); }
+  }
+}

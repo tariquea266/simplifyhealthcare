@@ -1,0 +1,50 @@
+// ========================================
+// Simplify Healthcare — Main SCSS Entry
+// Compile this file only: sass main.scss main.css
+//
+// Load order matters:
+//   1. Abstracts  (variables, animations — no output)
+//   2. Base       (reset, typography, accessibility)
+//   3. Layout     (container, header, footer)
+//   4. Components (buttons, cards, badges, etc.)
+//   5. Sections   (hero, industry, platform, etc.)
+//   6. Utilities  (responsive, a11y overrides, helpers)
+// ========================================
+
+
+// 1. Abstracts
+@use 'abstracts/variables';
+@use 'abstracts/animations';
+
+// 2. Base
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/accessibility';
+
+// 3. Layout
+@use 'layout/cms';
+@use 'layout/container';
+@use 'layout/header';
+@use 'layout/footer';
+
+// 4. Components
+@use 'components/buttons';
+@use 'components/badge';
+@use 'components/cards';
+@use 'components/slider';
+@use 'components/fixed-contact-hub';
+@use 'components/scroll-top';
+
+// 5. Sections
+@use 'sections/hero';
+@use 'sections/industry';
+@use 'sections/platform-advantage';
+@use 'sections/solutions';
+@use 'sections/proven-at-scale';
+@use 'sections/features';
+@use 'sections/cta';
+@use 'sections/recognized';
+
+// 6. Utilities  (always last — can override anything above)
+@use 'utilities/responsive';
+@use 'utilities/a11y-overrides';

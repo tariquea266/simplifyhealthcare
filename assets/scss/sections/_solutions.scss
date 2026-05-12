@@ -1,0 +1,216 @@
+// ========================================
+// Section: Connected AI Solutions
+// ========================================
+
+.sol-section {
+  position: relative;
+  overflow: hidden;
+  padding: 5.65rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sol-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(26.25rem, 0.9fr);
+  gap: var(--spacing-16);
+  align-items: center;
+
+  @media (max-width: 73.75rem) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-10);
+  }
+}
+
+.sol-visual {
+  img { 
+    border-radius: 1.35rem; 
+    height: 410px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @media (max-width: 47.5rem) {
+      height: 260px;
+    }
+  }
+}
+
+.sol-headline {
+  margin-top: var(--spacing-6);
+  font-size: clamp(2.625rem, 5vw, 4.625rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  color: var(--color-primary);
+  max-width: 56.25rem;
+
+  &__gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.sol-body {
+  margin-top: var(--spacing-6);
+  max-width: 47.5rem;
+  color: var(--color-gray-600);
+  font-size: var(--font-size-xl);
+  line-height: 1.75;
+
+  strong { color: var(--color-primary); }
+}
+
+// ----------------------------------------
+// Solutions CTA Button
+// ----------------------------------------
+
+.sol-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-4) var(--spacing-6);
+  font-weight: 800;
+  font-size: var(--font-size-base);
+  border: 0.0625rem solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+  white-space: nowrap;
+  min-height: 2.75rem;
+
+  &:hover { transform: translateY(-0.125rem); }
+
+  &--primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 0.875rem 1.75rem color-mix(in srgb, var(--color-primary) 22%, transparent);
+    margin-top: var(--spacing-8);
+
+    &:hover {
+      background: var(--color-primary-light);
+      box-shadow: 0 1.125rem 2.25rem color-mix(in srgb, var(--color-primary) 28%, transparent);
+    }
+  }
+}
+
+// ----------------------------------------
+// Solution Cards Grid
+// ----------------------------------------
+
+.sol-cards {
+  margin-top: var(--spacing-20);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-6);
+
+  .sol-card:nth-child(1),
+  .sol-card:nth-child(2) { grid-column: span 3; }
+
+  .sol-card:nth-child(n+3) { grid-column: span 2; }
+
+  @media (max-width: 61.25rem) {
+    grid-template-columns: 1fr;
+
+    .sol-card { grid-column: span 1 !important; }
+  }
+
+  @media (max-width: 47.5rem) {
+    margin-top: var(--spacing-12);
+  }
+}
+
+.sol-card {
+  position: relative;
+  min-height: 22.8125rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 0.0625rem solid color-mix(in srgb, var(--color-primary) 8%, transparent);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-8);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+
+  @media (max-width: 61.25rem) {
+    min-height: auto;
+    padding: var(--spacing-6);
+    border-radius: var(--radius-xl);
+  }
+
+  &:hover,
+  &--active {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 2.5rem -0.5rem rgba(13, 27, 62, 0.12);
+    border-color: color-mix(in srgb, var(--color-teal) 28%, transparent);
+
+    &::before { opacity: 1; }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+  }
+
+  &__icon {
+    width: 3.625rem;
+    height: 3.625rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--color-teal) 13%, transparent),
+      color-mix(in srgb, var(--color-accent) 9%, transparent)
+    );
+    color: var(--color-teal);
+    display: grid;
+    place-items: center;
+    box-shadow: inset 0 0 0 0.0625rem color-mix(in srgb, var(--color-teal) 8%, transparent);
+    flex-shrink: 0;
+
+    svg {
+      width: 1.8125rem;
+      height: 1.8125rem;
+    }
+  }
+
+  &__num {
+    font-size: var(--font-size-xs);
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    color: color-mix(in srgb, var(--color-primary) 34%, transparent);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: var(--font-size-2xl);
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-4);
+
+    @media (max-width: 47.5rem) {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  &__desc {
+    color: var(--color-gray-600);
+    font-size: var(--font-size-base);
+    line-height: 1.72;
+  }
+}
+
+.sol-action {
+  margin-top: var(--spacing-12);
+  display: flex;
+  justify-content: center;
+}

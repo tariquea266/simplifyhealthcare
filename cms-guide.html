@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CMS Guide - Simplify Healthcare</title>
+    <meta name="description" content="Complete CMS documentation guide for Simplify Healthcare website. Learn how to manage sections, update content, and use the CMS effectively.">
+    <meta name="keywords" content="CMS guide, Simplify Healthcare, content management, website sections, editable sections">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Simplify Healthcare">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CMS Guide - Simplify Healthcare">
+    <meta property="og:description" content="Complete CMS documentation guide for Simplify Healthcare website.">
+    <meta property="og:image" content="https://simplifyhealthcare.netlify.app/assets/images/og.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Simplify Healthcare">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SimplifyHC">
+    <meta name="twitter:title" content="CMS Guide - Simplify Healthcare">
+    <meta name="twitter:description" content="Complete CMS documentation guide for Simplify Healthcare website.">
+    <meta name="twitter:image" content="https://simplifyhealthcare.netlify.app/assets/images/og.jpeg">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="icon" type="image/svg+xml" href="https://simplifyhealthcare.com/wp-content/uploads/2020/08/SH-Favicon.svg">
+    <link rel="stylesheet" href="https://tbcdn.talentbrew.com/company/641/v3_0/js/fancybox/jquery-fancybox-min.css" type="text/css">
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <aside class="fixed-contact-hub" aria-label="Contact information">
+        <div class="info-drawers">
+
+            <!-- Phone -->
+            <a href="tel:+18447206678"
+               class="drawer-item"
+               aria-label="Call Simplify Healthcare at (844) 720-6678">
+                <span class="drawer-label" aria-hidden="true">(844) 720-6678</span>
+                <span class="hub-btn info" aria-hidden="true">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                </span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:info@simplifyhealthcare.com"
+               class="drawer-item"
+               aria-label="Email Simplify Healthcare at info@simplifyhealthcare.com">
+                <span class="drawer-label" aria-hidden="true">info@simplifyhealthcare.com</span>
+                <span class="hub-btn info" aria-hidden="true">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </span>
+            </a>
+
+            <!-- Address -->
+            <a href="https://maps.google.com/?q=600+N+Commons+Dr,+Aurora,+IL"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="drawer-item"
+               aria-label="View our office address: 600 N Commons Dr, Aurora, IL (opens in Google Maps, new tab)">
+                <span class="drawer-label" aria-hidden="true">600 N Commons Dr, Aurora, IL</span>
+                <span class="hub-btn info" aria-hidden="true">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </span>
+            </a>
+
+        </div>
+    </aside>
+
+    <!-- Scroll to Top Button -->
+    <button
+        id="scrollTopBtn"
+        class="scroll-top-btn"
+        aria-label="Scroll back to top"
+        title="Back to top"
+        type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <!-- Header -->
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation" role="navigation">
+
+                <!-- WCAG Fix: Logo alt text describes the brand (was empty) -->
+                <a href="/" class="logo" aria-label="Simplify Healthcare – go to homepage">
+                    <img src="assets/images/Simplify-Healthcare-Logo-with-Group_Color.svg"
+                         alt="Simplify Healthcare"
+                         width="200" height="50">
+                </a>
+
+                <!-- WCAG Fix: aria-expanded + aria-controls added to hamburger -->
+                <button class="hamburger"
+                        id="hamburger"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="navMenu"
+                        aria-label="Open navigation menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu" role="list">
+                    <li class="nav-item">
+                        <a href="#platform" class="nav-link">Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#solutions" class="nav-link">Our Solutions</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="#operations" class="nav-link">Operations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resources" class="nav-link">Recognized</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#company" class="nav-link">Company</a>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#demo" class="btn btn-primary">Request Demo</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <!-- CMS Guide Hero Section -->
+        <div class="section-0 cms-guide-info top-section-cms">
+            <div class="section-0__wrapper container">
+                <div class="section-0__content-wrapper">
+                    <div class="custom-html">
+                        <h1><strong>CMS</strong> GUIDE</h1>
+                        <h2></h2>
+                        <h3><strong>Table</strong> of Contents</h3>
+                        <ul>
+                            <li><a href="#cms-guide_style-management">Style Management</a></li>
+                            <li><a href="#cms-guide_general-advice">General Advice &amp; FAQs</a></li>
+                            <li><a href="#cms-guide_cms-user-notes">CMS User Notes</a></li>
+                            <li><a href="#cms-guide_section-guide">Section Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Style Management Section -->
+       <div class="section-0 cms-guide-info">
+            <div class="section-0__wrapper container">
+                <div class="section-0__content-wrapper">
+                    <div class="custom-html">
+                        <h3 id="cms-guide_style-management">
+                        <strong>Style</strong> Management
+                        </h3>
+                        <p>
+                      The following options are available to create a CMS page.
+                      This section defines the global styles including colors, typography, and UI elements used across the website.
+                        </p>
+                        <div class="divider"></div>
+                        <h3 class="heading-h3 typo">Logo:</h3>
+                        <p>This section displays the primary and alternate logo variations used across the website.</p>
+                        <div class="color-swatch__wrapper-1">
+                            <img alt="" src="assets/images/Simplify-Healthcare-Logo-with-Group_Color.svg" />
+                            <div class="white-logo">
+                                <img alt="" src="assets/images/Simplify-Healthcare-Logo-with-Group_Color.svg" />
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <h3 class="heading-h3 typo">Colors:</h3>
+                        <p>These are the primary and secondary color palettes used throughout the website. Ensure consistency when applying colors in any section.</p>
+                        <div class="color-swatch__wrapper-2">
+                        <div class="main-color">
+                            <div class="color-swatch">
+                                <span class="primary"></span>
+                                <p><strong>Primary Color</strong></p>
+                                <p>Hex: #0e1f49</p>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="secondary"></span>
+                                <p><strong>Secondary Color</strong></p>
+                                <p>Hex: #14b8a6</p>
+                            </div>
+                        </div>
+                        <div class="small-colors">
+                            <div class="color-swatch">
+                                <span class="lightBlue"></span>
+                                <p>
+                                    <strong>lightBlue <br /></strong>Hex: #0075c9
+                                </p>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="lightGreen"></span>
+                                <p>
+                                    <strong>LightGreen <br /></strong>Hex: #6cb33e
+                                </p>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="red"></span>
+                                <p>
+                                    <strong>Red <br /></strong>Hex: #d41f2a
+                                </p>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="lightGrey"></span>
+                                <p>
+                                    <strong>LightGrey <br /></strong>Hex: #d9d8d6
+                                </p>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="black"></span>
+                                <p>
+                                    <strong>Black <br /></strong>Hex: #000000
+                                </p>
+                            </div>
+                            <div class="color-swatch">
+                                <span class="mediumGrey"></span>
+                                <p>
+                                    <strong>MediumGrey <br /></strong>Hex: #757679
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="divider"></div>
+                        <h3 class="heading-h3 typo">Typography:</h3>
+                        <p>This section defines heading and paragraph styles. Maintain hierarchy and consistency when updating content.</p>
+                        
+                        <p>The website uses Inter as the primary font family, with system fallbacks to ensure optimal performance and consistency across devices.</p>
+                        <h4>Font Stack:</h4>
+                        <p>"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif</p>
+                        <p>Inter is a modern, highly readable typeface designed for digital interfaces. The fallback fonts ensure a consistent user experience across different operating systems and browsers.</p>
+                        <p>Maintain proper hierarchy using headings (H1–H6) and paragraph styles to ensure clarity, readability, and visual consistency throughout the website.</p>
+                        <div class="color-swatch__wrapper-3">
+                        <h1 class="heading-h1">
+                            H1 <strong>Lorem ipsum</strong>
+                        </h1>
+                        <h2 class="heading-h2">
+                            H2 <span class="text-gradient">Lorem ipsum</span>
+                        </h2>
+                        <h3 class="heading-h3">
+                            H3 <strong>Lorem ipsum</strong>
+                        </h3>
+                        <p class="para-16">
+                            <strong>Para 16:</strong> Body copy 16pt Lorem ipsum odor
+                            amet, consectetuer adipiscing elit. Eu penatibus viverra
+                            sodales aliquam magna hac maecenas ligula. Ipsum aptent semper
+                            ut nulla ipsum tempus est nam nibh. Iaculis luctus interdum
+                            sed turpis lobortis morbi tempor. Venenatis euismod tempus
+                            ipsum dolor parturient a molestie laoreet.
+                        </p>
+                        <ul>
+                            <li>Lorem ipsum odor amet</li>
+                            <li>Lorem ipsum odor amet</li>
+                        </ul>
+                        
+                        <div class="divider"></div>
+                        <h3 class="heading-h3 typo">Text &amp; Background Color:</h3>
+                        <p>Use these predefined text and background color combinations to maintain design consistency and accessibility standards.</p>
+                        <p class="dark-blue">&diams; Color Dark Blue</p>
+                        <p class="mediumGrey">&diams; Color Medium Gray</p>
+                        <p class="medium-blue">&diams; Color Medium Blue</p>
+                        <p class="light-blue">&diams; Color Light Blue</p>
+                        <p class="dark-black">&diams; Color Black</p>
+                        <div class="bg-colors">
+                            <div class="background-dark-blue">Background dark blue</div>
+                            <div class="background-white dark-black">
+                                background white
+                            </div>
+                            <div class="background-black">background black</div>
+                        </div>
+                        <div class="divider"></div>
+                        <h3 class="heading-h3 typo">Buttons &amp; Links:</h3>
+                        <p>This section includes standard button styles and link variations used across the website.</p>
+                        <a href="#solutions" class="btn btn-primary btn-lg">
+                            Explore the Platform
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="groupbtn">
+                            <button class="btn btn-primary btn-lg">Primary Btn</button>
+                            <button class="btn btn-outline btn-lg">Secondary Btn</button>
+                        </div>
+                        <br>
+                        <p>
+                            <em
+                                >*Use your mouse to hover over links in order to see their
+                                hover states.</em
+                            >
+                        </p>
+                        <div class="divider"></div>
+                        <h3 class="heading-h3 typo">Spacing:</h3>
+                        <p>Spacing values define margins and padding used to maintain consistent layout and alignment.</p>
+                        <div class="background-light-blue margin-top-20 marnno">
+                            <p class="background-white">
+                                <em>Lorem ipsum dolor sit amet.</em>
+                            </p>
+                            <p class="background-white margin-top-10">
+                                <strong>&uarr; Margin Top 10px</strong>
+                            </p>
+                        </div>
+                        <div class="background-light-blue margin-top-20 marnno">
+                            <p class="background-white">
+                                <em>Lorem ipsum dolor sit amet.</em>
+                            </p>
+                            <p class="background-white margin-top-15">
+                                <strong>&uarr; Margin Top 15px</strong>
+                            </p>
+                        </div>
+                        <div class="background-light-blue margin-top-20 marnno">
+                            <p class="background-white">
+                                <em>Lorem ipsum dolor sit amet.</em>
+                            </p>
+                            <p class="background-white margin-top-20">
+                                <strong>&uarr; Margin Top 20px</strong>
+                            </p>
+                        </div>
+                        <div class="background-light-blue margin-top-20 marnno">
+                            <p class="background-white">
+                                <em>Lorem ipsum dolor sit amet.</em>
+                            </p>
+                            <p class="background-white margin-top-32">
+                                <strong>&uarr; Margin Top 32px</strong>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- General Advice & FAQs -->
+        <div class="section-0 cms-guide-info" >
+            <div class="section-0__wrapper container">
+                <div class="section-0__content-wrapper">
+                    
+                    <div class="custom-html ">
+                    <h3 id="cms-guide_general-advice"><strong>General Advice</strong> &amp; FAQs</h3>
+                    <p><b>How should I use sections in this CMS?</b></p>
+                    <p>This CMS is based on reusable code sections. To create a new page, copy the required section code and paste it into your new page. You can update the content (text, images, icons) as needed.</p>
+                    <p><b>Can I rearrange sections?</b></p>
+                    <p>Yes, you can place sections in any order based on your page requirements. Sections can be reused and repositioned freely.</p>
+                    <p><b>Can I modify design elements like colors, fonts, or button styles?</b></p>
+                    <p>No, design elements such as button colors, typography, spacing, and layout styles are fixed to maintain consistency across the website. Any design-related changes require code-level updates.</p>
+                    <p><b>What should I do if I need design changes?</b></p>
+                    <p>If you need to modify styles (e.g., button color, layout, spacing), please contact the developer responsible for this project. These changes cannot be done through the CMS.</p>
+                    <p><b>Can I reuse sections across multiple pages?</b></p>
+                    <p>Yes, all sections are reusable. You can copy the same section and use it on different pages without any issue.</p>
+                    <p><b>How should I update content?</b></p>
+                    <p>Only update the content inside the section (text, images, links). Avoid removing or modifying the core structure of the code, as it may break the layout or functionality.</p>
+                    <p><b>Is this a dynamic CMS with URLs?</b></p>
+                    <p>No, this setup does not use dynamic CMS URLs. All pages must be created manually by reusing section code and updating the content accordingly.</p>
+                    <p><b>What should I do if I face issues?</b></p>
+                    <p>If you face any issues while editing or creating pages, please reach out to the developer responsible for this CMS guide.</p>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+         <!-- CMS User Notes -->
+        <div class="section-0 cms-guide-info">
+            <div class="section-0__wrapper container">
+                <div class="section-0__content-wrapper">
+                    <div class="custom-html ">
+                        <h3 id="cms-guide_cms-user-notes"><strong>CMS</strong> User Notes</h3>
+                    <p><b>How can I add or update content in a CMS section?</b></p>
+                    <p>To create or update a page using a CMS section, follow the steps below:</p>
+                        <ul>
+                            <li>Identify the section you want to use from the section list.</li>
+                            <li>Create a new page and copy the structure/code of the required section.</li>
+                            <li>Paste it into your new page and update the content, including headings, text, images, and icons, as per your requirements.</li>
+                            <li>Ensure all content aligns with your page goal and design consistency.</li>
+                        </ul>
+                        <p>If you encounter any issues while updating or implementing this section, please reach out to the developer responsible for creating this CMS guide.</p>
+                        <p>please contact the developer responsible for this CMS guide</p>
+                        <p><i>Add your notes below:</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Section Guide -->
+        <div class="section-0 cms-guide-info">
+            <div class="section-0__wrapper container">
+                <div class="section-0__content-wrapper">
+                    <div class="custom-html ">
+                        <h3 id="cms-guide_section-guide"><strong>Section</strong> Guide</h3>
+                        <p><b>Important!</b> Before using any section from this guide, please review the corresponding documentation. The documentation for each section is provided above it within this guide.</p>
+                        <p>Section titles are color-coded in the CMS. Make sure to use the section code that matches the same color (e.g., red or green) as the section you want to use. This ensures you are selecting the correct version of the section.</p>
+                        <p>
+                        <span style="background-color: red; color: white;">Red</span> - Non-editable section.<br />
+                        <span style="background-color: green; color: white;">Green</span> - Editable section.
+                        </p>
+                        <p>Please note that editing a section from the "Use Existing" menu will update all instances of that section across the site.</p>                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- SECTION 1: Industry Section (Editable) -->
+        <div class="section-documentation">
+            <div class="container">
+                <h2>Section Name: Section 1</h2>
+                <p><b>Notes:</b> This section is CMS editable and can be used to create new pages. You can modify the heading, subheading, paragraph text, and icons as needed. Additionally, you have full flexibility to remove any part of this section if it is not required.</p>
+                <p><b>Editable:</b> Yes</p>
+            </div>
+        </div>
+        <section class="industry-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="eyebrow" aria-hidden="true">
+                        <span class="eyebrow-dot"></span>
+                        <span class="eyebrow-text">Lorem Ipsum is simply dummy text</span>
+                    </div>
+
+                    <h2 class="section-headline" id="industry-heading">
+                        Lorem Ipsum is simply dummy text.
+                    </h2>
+
+                    <div class="section-divider" aria-hidden="true"></div>
+
+                    <p class="section-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                        <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong>
+                    </p>
+                </div>
+
+                <div class="stats-grid" role="list" aria-label="Industry problem statistics">
+
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-unlink" aria-hidden="true"></i>
+                        </div>
+                        <p class="stat-numbers" aria-hidden="true">00<span>-</span>00</p>
+                        <p class="stat-label">Lorem Ipsum is simply dummy text typesetting industry.</p>
+                        <span class="sr-only">15 to 25 disconnected systems per average health plan</span>
+                    </div>
+
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon feature-icon" aria-hidden="true">
+                            <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                        </div>
+                        <p class="stat-numbers" aria-hidden="true">00<span>-</span>00</p>
+                        <p class="stat-label">Lorem Ipsum is simply dummy text typesetting industry.</p>
+                        <span class="sr-only">15 to 25 disconnected systems per average health plan</span>
+                    </div>
+
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon feature-icon" aria-hidden="true">
+                            <i class="fas fa-tools" aria-hidden="true"></i>
+                        </div>
+                        <p class="stat-numbers" aria-hidden="true">00<span>-</span>00</p>
+                        <p class="stat-label">Lorem Ipsum is simply dummy text typesetting industry.</p>
+                        <span class="sr-only">15 to 25 disconnected systems per average health plan</span>
+                    </div>
+
+                    <div class="stat-card" role="listitem">
+                        <div class="stat-icon feature-icon" aria-hidden="true">
+                            <i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>
+                        </div>
+                        <p class="stat-numbers" aria-hidden="true">00<span>-</span>00</p>
+                        <p class="stat-label">Lorem Ipsum is simply dummy text typesetting industry.</p>
+                        <span class="sr-only">15 to 25 disconnected systems per average health plan</span>
+                    </div>
+
+                </div>
+
+                <div class="closing-banner">
+                    <div class="closing-inner">
+                        <p class="closing-line1">Lorem Ipsum is simply dummy text typesetting industry.</p>
+                        <span class="closing-line2">Lorem Ipsum is simply dummy text</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: Platform Section (Editable) -->
+        <div class="section-documentation">
+            <div class="container">
+                <h2>Section Name: Section 2</h2>
+                <p><b>Notes:</b> This section is CMS editable and can be used to create new pages. You can modify the heading, subheading, paragraph text, and icons as needed. Additionally, you have full flexibility to remove any part of this section if it is not required.</p>
+                <p><b>Editable:</b> Yes</p>
+            </div>
+        </div>
+        <section class="pa-section">
+            <div class="pa-section__grid" aria-hidden="true"></div>
+            <div class="pa-section__blob" aria-hidden="true"></div>
+
+            <div class="container">
+
+                <div class="pa-header">
+                    <div class="pa-eyebrow" aria-hidden="true">
+                        <span class="pa-eyebrow__ping-wrap">
+                            <span class="pa-eyebrow__ping"></span>
+                            <span class="pa-eyebrow__dot"></span>
+                        </span>
+                        <span class="pa-eyebrow__text">Lorem Ipsum is simply dummy text</span>
+                    </div>
+
+                    <h2 class="pa-headline" id="platform-advantage-heading">
+                        Lorem Ipsum is <br>
+                        <span class="text-gradient">simply dummy text</span>
+                    </h2>
+
+                    <p class="pa-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+
+                <div class="pa-cards" role="list" aria-label="Platform capability cards">
+
+                    <!-- Card 1: Agentic Automation -->
+                    <div class="pa-card pa-card--cyan" role="listitem">
+                        <div class="pa-card__hover-glow" aria-hidden="true"></div>
+                        <div class="pa-card__inner">
+                            <div class="pa-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                     aria-hidden="true" focusable="false">
+                                    <path d="M12 8V4H8"/>
+                                    <rect width="16" height="12" x="4" y="8" rx="2"/>
+                                    <path d="M2 14h2"/><path d="M20 14h2"/>
+                                    <path d="M15 13v2"/><path d="M9 13v2"/>
+                                </svg>
+                            </div>
+                            <h3 class="pa-card__title">Lorem Ipsum is simply dummy text</h3>
+                            <p class="pa-card__desc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Context1 -->
+                    <div class="pa-card pa-card--blue" role="listitem">
+                        <div class="pa-card__hover-glow" aria-hidden="true"></div>
+                        <div class="pa-card__inner">
+                            <div class="pa-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                     aria-hidden="true" focusable="false">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    <path d="m9 9 2 2-2 2"/><path d="m13 13 2-2-2-2"/>
+                                </svg>
+                            </div>
+                            <h3 class="pa-card__title">Lorem Ipsum is simply dummy text</h3>
+                            <p class="pa-card__desc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: AI Governance -->
+                    <div class="pa-card pa-card--purple" role="listitem">
+                        <div class="pa-card__hover-glow" aria-hidden="true"></div>
+                        <div class="pa-card__inner">
+                            <div class="pa-card__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                     aria-hidden="true" focusable="false">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="pa-card__title">Lorem Ipsum is simply dummy text</h3>
+                            <p class="pa-card__desc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pa-cta">
+                    <a href="#solutions" class="btn btn-primary btn-lg">
+                        Explore the Platform
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: Solutions Section (Editable) -->
+        <div class="section-documentation">
+            <div class="container">
+                <h2>Section Name: Section 3</h2>
+                <p><b>Notes:</b> This section is CMS editable and can be used to create new pages. You can modify the heading, subheading, paragraph text, image, and icons as needed. Additionally, you have full flexibility to remove any part of this section if it is not required.</p>
+                <p><b>Editable:</b> Yes</p>
+            </div>
+        </div>
+        <section class="sol-section">
+            <div class="sol-section__grid" aria-hidden="true"></div>
+
+            <div class="container">
+
+                <div class="sol-hero">
+
+                    <div class="sol-visual">
+                        <img src="https://dummyimage.com/600x400/a3a3a3/fff"
+                             alt=""
+                             loading="lazy">
+                    </div>
+
+                    <div class="sol-hero__copy">
+                        <div class="pa-header">
+                            <div class="pa-eyebrow" aria-hidden="true">
+                                <span class="pa-eyebrow__ping-wrap">
+                                    <span class="pa-eyebrow__ping"></span>
+                                    <span class="pa-eyebrow__dot"></span>
+                                </span>
+                                <span class="pa-eyebrow__text">Lorem Ipsum is simply dummy text</span>
+                            </div>
+
+                            <h2 class="pa-headline" id="solutions-heading">
+                                Lorem Ipsum is <br> simply dummy text. <br>
+                                <span class="text-gradient">Lorem Ipsum</span>
+                            </h2>
+
+                            <p class="pa-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution Cards -->
+                <div class="sol-cards" role="list" aria-label="Connected AI Solutions">
+
+                    <article class="sol-card">
+                        <div class="sol-card__content">
+                            <div class="sol-card__top">
+                                <div class="sol-card__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M5 4h14v16H5V4Zm4 4h6M9 12h6M9 16h4"
+                                              stroke="currentColor" stroke-width="2"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="sol-card__num" aria-hidden="true">Solution 01</span>
+                            </div>
+                            <h3 class="sol-card__title">Lorem Ipsum is simply dummy text </h3>
+                            <p class="sol-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                    </article>
+
+                    <article class="sol-card" >
+                        <div class="sol-card__content">
+                            <div class="sol-card__top">
+                                <div class="sol-card__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M16 21v-2a4 4 0 0 0-8 0v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm7-1v6m3-3h-6"
+                                              stroke="currentColor" stroke-width="2"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="sol-card__num" aria-hidden="true">Solution 02</span>
+                            </div>
+                            <h3 class="sol-card__title">Lorem Ipsum is simply dummy text </h3>
+                            <p class="sol-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                    </article>
+
+                    <article class="sol-card">
+                        <div class="sol-card__content">
+                            <div class="sol-card__top">
+                                <div class="sol-card__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M7 4h10a2 2 0 0 1 2 2v14l-3-2-3 2-3-2-3 2V6a2 2 0 0 1 2-2Z"
+                                              stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                        <path d="M9 9h6M9 13h6M10 17h4"
+                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="sol-card__num" aria-hidden="true">Solution 03</span>
+                            </div>
+                            <h3 class="sol-card__title">Lorem Ipsum is simply dummy text </h3>
+                            <p class="sol-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type dammy text.</p>
+                        </div>
+                    </article>
+
+                    <article class="sol-card">
+                        <div class="sol-card__content">
+                            <div class="sol-card__top">
+                                <div class="sol-card__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"
+                                              stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                        <path d="M8 9h8M8 13h5"
+                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="sol-card__num" aria-hidden="true">Solution 04</span>
+                            </div>
+                            <h3 class="sol-card__title">Lorem Ipsum is simply dummy text </h3>
+                            <p class="sol-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type dammy text.</p>
+                        </div>
+                    </article>
+
+                    <article class="sol-card">
+                        <div class="sol-card__content">
+                            <div class="sol-card__top">
+                                <div class="sol-card__icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"
+                                              stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                        <path d="M4 7l8 4 8-4M12 11v10"
+                                              stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <span class="sol-card__num" aria-hidden="true">Solution 05</span>
+                            </div>
+                            <h3 class="sol-card__title">Lorem Ipsum is simply dummy text </h3>
+                            <p class="sol-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type dammy text.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="sol-action">
+                    <a href="#solutions" class="btn btn-primary btn-lg">
+                        View All Solutions
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: Features Section (Editable) -->
+        <div class="section-documentation">
+            <div class="container">
+                <h2>Section Name: Section 4</h2>
+                <p><b>Notes:</b> This section is CMS editable and can be used to create new pages. You can modify the heading, subheading, paragraph text, and icons as needed. Additionally, you have full flexibility to remove any part of this section if it is not required.</p>
+                <p><b>Editable:</b> Yes</p>
+            </div>
+        </div>
+        <section class="features">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="eyebrow" aria-hidden="true">
+                        <span class="eyebrow-dot"></span>
+                        <span class="eyebrow-text">Lorem Ipsum is simply dummy text</span>
+                    </div>
+
+                    <h2 class="section-headline">
+                        Lorem Ipsum is simply dummy text.
+                    </h2>
+
+                    <div class="section-divider" aria-hidden="true"></div>
+
+                    <p class="section-body">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                    </p>
+                </div>
+
+                <div class="features-grid" role="list" aria-label="Ways to evaluate the platform">
+
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                        </div>
+                        <span class="time-tag">1 WEEKS</span>
+                        <h3>Lorem Ipsum is simply dummy text.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                        <a href="#" class="cta-start">Call to Action
+                            <span class="sr-only"> Call to Action</span> →</a>
+                    </div>
+
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-compass" aria-hidden="true"></i>
+                        </div>
+                        <span class="time-tag">1 WEEKS</span>
+                        <h3>Lorem Ipsum is simply dummy text.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                        <a href="#" class="cta-start">Call to Action
+                            <span class="sr-only"> Call to Action</span> →</a>
+                    </div>
+
+                    <div class="feature-card" role="listitem">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <span class="time-tag">1 WEEKS</span>
+                        <h3>Lorem Ipsum is simply dummy text.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                        <a href="#" class="cta-start">Call to Action
+                            <span class="sr-only"> Call to Action</span> →</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       <!-- Recognized By Section (Non-Editable) -->
+        <div class="section-documentation non-editable">
+            <div class="container">
+                <h2>Section Name: Recognized By</h2>
+                <p><b>Notes:</b> This slider section is reusable across multiple pages but is not CMS editable. You can place this component wherever needed to maintain design consistency, but its content and structure cannot be modified. Any updates or customizations would require approval.</p>
+                <p><b>Editable:</b> No</p>
+            </div>
+        </div>
+        <section class="recognized-section" aria-labelledby="recognized-heading" id="resources">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow" aria-hidden="true">
+                        <span class="eyebrow-dot"></span>
+                        <span class="eyebrow-text">RECOGNIZED BY</span>
+                    </div>
+
+                    <h2 class="section-headline" id="recognized-heading">
+                        Recognized By Industry Leaders
+                    </h2>
+
+                    <div class="section-divider" aria-hidden="true"></div>
+
+                    <p class="section-body">
+                        Recognized by industry leaders for innovation in healthcare technology,
+                        security, and operational excellence.
+                    </p>
+                </div>
+
+                <div class="slider-container"
+                     id="sliderContainer"
+                     role="region"
+                     aria-label="Certifications and awards carousel (auto-scrolling, pauses on hover)"
+                     aria-live="off">
+                    <div class="slider-wrapper">
+                        <div class="slider" id="slider" aria-hidden="true">
+                            <!-- Cards inserted by JS — aria-hidden="true" so screen readers
+                                 use the static badges section above instead -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Schedule a Demo Section (Non-Editable) -->
+        <div class="section-documentation non-editable">
+            <div class="container">
+                <h2>Section Name: Schedule a Demo</h2>
+                <p><b>Notes:</b> This section includes “Schedule a Demo” and “Contact Sales” actions and is not CMS editable. It is a fixed component designed to ensure a consistent user experience and conversion flow across all pages. The content, labels, and functionality of this section cannot be modified, removed, or rearranged through the CMS. Any changes require approval.</p>
+                <p><b>Editable:</b> No</p>
+            </div>
+        </div>
+        <section class="cta-section" id="demo" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-heading">Ready to Transform Your Healthcare Operations?</h2>
+                    <p>Join 70+ leading health plans already using Simplify Healthcare.</p>
+                    <div class="cta-buttons">
+                        <a href="#demo" class="btn btn-white btn-lg">Schedule a Demo</a>
+                        <a href="#contact" class="btn btn-outline-white btn-lg">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (Non-Editable) -->
+    <div class="section-documentation non-editable">
+        <div class="container">
+            <h2>Section Name: Footer</h2>
+            <p><b>Notes:</b> This footer section is static and not CMS editable. It is designed to maintain consistency across all pages. The content, including company information, links, and legal details, cannot be modified or removed through the CMS. Any changes to this section would require approval.</p>
+            <p><b>Editable:</b> No</p>
+        </div>
+    </div>
+    <footer class="footer" id="contact" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a href="/" class="logo" aria-label="Simplify Healthcare – go to homepage">
+                        <img src="assets/images/Simplify-Healthcare-Logo-with-Group_Color.svg"
+                             alt="Simplify Healthcare"
+                             loading="lazy">
+                    </a>
+                    <p>The Connected AI platform for payer operations. Unifying benefits, provider,
+                        claims, insights and customer experience management for U.S. healthcare payers.</p>
+
+                    <!-- WCAG: All social icon links have aria-labels (WCAG 2.4.6) -->
+                    <nav class="social-links" aria-label="Social media links">
+                        <a href="https://www.linkedin.com/company/simplify-healthcare"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Simplify Healthcare on LinkedIn (opens in new tab)">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/simplifyhealthcare"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Simplify Healthcare on Instagram (opens in new tab)">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@SimplifyHealthcare"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Simplify Healthcare on YouTube (opens in new tab)">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/SimplifyHC"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Simplify Healthcare on X (formerly Twitter) (opens in new tab)">
+                            <i class="fab fa-x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#"
+                           aria-label="Simplify Healthcare on Apple Podcasts">
+                            <i class="fab fa-apple" aria-hidden="true"></i>
+                        </a>
+                        <a href="#"
+                           aria-label="Simplify Healthcare on Spotify">
+                            <i class="fab fa-spotify" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="footer-links">
+                    <nav class="footer-column" aria-label="Company links">
+                        <h3>Company</h3>
+                        <ul role="list">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Why Join Us</a></li>
+                            <li><a href="#">Current Openings</a></li>
+                            <li><a href="#">Our Offices</a></li>
+                            <li><a href="#">Get In Touch</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer-column" aria-label="Solutions links">
+                        <h3>Our Solutions</h3>
+                        <ul role="list">
+                            <li><a href="#">Product and Benefits</a></li>
+                            <li><a href="#">Provider Lifecycle Management</a></li>
+                            <li><a href="#">Claims Lifecycle</a></li>
+                            <li><a href="#">Payer Performance Management</a></li>
+                            <li><a href="#">Customer Experience</a></li>
+                            <li><a href="#">Payer Ontology &amp; Data Activation</a></li>
+                            <li><a href="#">Solutions as a Service</a></li>
+                            <li><a href="#">Advisory Services</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer-column" aria-label="Resources links" id="resources-nav">
+                        <h3>Resources</h3>
+                        <ul role="list">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Podcasts</a></li>
+                            <li><a href="#">Webinars</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Simplify Healthcare University</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p><small>&copy; 2026 Simplify Healthcare Technology. All rights reserved.</small></p>
+                <nav class="legal-links" aria-label="Legal links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://tbcdn.talentbrew.com/company/641/v3_0/js/fancybox/jquery-fancybox-min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

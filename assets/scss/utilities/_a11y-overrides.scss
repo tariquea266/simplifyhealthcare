@@ -1,0 +1,60 @@
+// ========================================
+// Utilities: Accessibility Overrides
+// ========================================
+
+// WCAG 2.3.3 — Prefers Reduced Motion
+// Disable all animations for vestibular/motion sensitivity
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html { scroll-behavior: auto; }
+
+  // Keep visibility changes, remove motion
+  .pas-stat {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .pas-badge {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  // Stop slider & float animations
+  .slider       { animation: none !important; }
+  .video-badge  { animation: none !important; }
+}
+
+// WCAG — Windows High Contrast Mode
+@media (forced-colors: active) {
+  .btn {
+    border: 2px solid ButtonText;
+    forced-color-adjust: none;
+  }
+
+  .text-gradient {
+    -webkit-text-fill-color: ButtonText;
+    background: none;
+    color: ButtonText;
+  }
+
+  .skip-link { border: 2px solid ButtonText; }
+
+  .nav-link::after { background: ButtonText; }
+
+  .stat-card:hover,
+  .feature-card:hover,
+  .sol-card:hover { outline: 2px solid Highlight; }
+
+  .pa-card   { border: 2px solid ButtonText; }
+  .hub-btn   { border: 1px solid ButtonText; }
+}

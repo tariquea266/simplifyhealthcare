@@ -1,0 +1,135 @@
+// ========================================
+// Layout: Header & Navigation
+// ========================================
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(0.625rem);
+  border-bottom: 0.0625rem solid var(--color-gray-100);
+  transition: all var(--transition-base);
+  padding: 0.625rem 0;
+
+  &.scrolled {
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+}
+
+// ----------------------------------------
+// Logo
+// ----------------------------------------
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  width: 12.5rem;
+
+  &-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    background: var(--color-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: var(--font-size-lg);
+  }
+
+  &-text {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+}
+
+// ----------------------------------------
+// Nav Menu
+// ----------------------------------------
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  list-style: none;
+}
+
+.nav-link {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-gray-600);
+  padding: var(--spacing-2) 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.125rem;
+    background: var(--color-accent);
+    transition: width var(--transition-base);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-primary);
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+// ----------------------------------------
+// Hamburger (Mobile)
+// WCAG 2.5.5: min touch target 44×44px
+// ----------------------------------------
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3125rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-2);
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem;
+    background: var(--color-primary);
+    transition: all var(--transition-base);
+    pointer-events: none;
+  }
+
+  &.active {
+    span:nth-child(1) { transform: rotate(45deg) translate(0.3125rem, 0.3125rem); }
+    span:nth-child(2) { opacity: 0; }
+    span:nth-child(3) { transform: rotate(-45deg) translate(0.3125rem, -0.3125rem); }
+  }
+}

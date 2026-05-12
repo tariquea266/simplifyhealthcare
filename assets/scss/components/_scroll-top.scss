@@ -1,0 +1,62 @@
+// ========================================
+// Components: Scroll-to-Top Button
+// WCAG 2.4.7: Explicit focus-visible style
+// ========================================
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.2rem;
+  z-index: 999;
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-lg), 0 0 0 0 rgba(20, 184, 166, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(1rem) scale(0.85);
+  pointer-events: none;
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease,
+    box-shadow 200ms ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-xl), 0 0 0 6px rgba(20, 184, 166, 0.18);
+    transform: translateY(-3px) scale(1.07);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 3px;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,526 @@
+// =====================================================
+// CMS GUIDE PAGE STYLES
+// =====================================================
+
+// Section Documentation Badges
+.section-documentation {
+    color: #fff;
+    padding: 1.5rem 24px;
+    background-color: #6f00ef;
+    position: relative;
+
+    h2 {
+        background-color: green;
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 16px;
+
+        b {
+            background-color: rgba(255, 255, 255, 0.25);
+            padding: 5px;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
+// Non-editable section badge
+.non-editable {
+    h2 {
+        background-color: red;
+    }
+}
+
+// Top section margin
+.top-section-cms {
+    margin-top: 125px !important;
+}
+
+// =====================================================
+// Section 0 - Main Content Area
+// =====================================================
+
+.section-0 {
+    padding: 30px 0;
+}
+
+.section-0__wrapper {
+    margin: 6rem auto;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 62rem;
+    padding: 0 1.25rem;
+}
+
+@media (max-width: 50rem) {
+    .section-0__wrapper {
+        display: grid;
+        gap: 1.875rem;
+        margin: 4rem auto;
+    }
+}
+
+.section-0__content-wrapper {
+    width: 100%;
+    filter: brightness(0.98);
+
+    @media (max-width: 50rem) {
+        overflow: hidden;
+    }
+
+    // Headings
+    h1 {
+        font-size: 2.625rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.95;
+        letter-spacing: -0.0625rem;
+        color: #0d1b3e;
+        margin-bottom: 0.9375rem;
+
+        strong {
+            font-weight: bold;
+            color: #0d1b3e;
+        }
+    }
+
+    h2 {
+        font-size: 2.625rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.95;
+        letter-spacing: -0.0625rem;
+        color: #0d1b3e;
+        margin-bottom: 0.9375rem;
+
+        strong {
+            font-weight: bold;
+            color: #0075c9;
+        }
+    }
+
+    h3 {
+        font-size: 2.25rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.95;
+        letter-spacing: -0.0625rem;
+        color: #0d1b3e;
+        margin-bottom: 1.6rem;
+
+        strong {
+            font-weight: bold;
+            color: #0d1b3e;
+        }
+    }
+
+    // Paragraphs
+    p {
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #757679;
+        margin-bottom: 1.75rem;
+    }
+
+    // Lists
+    ul {
+        display: grid;
+        gap: 0.625rem;
+        margin-bottom: 0.625rem;
+        list-style: outside;
+        margin-left: 0.9375rem;
+
+        li {
+            font-size: 1rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.63;
+            letter-spacing: normal;
+            color: #757679;
+        }
+    }
+}
+
+// Responsive headings
+@media (max-width: 50rem) {
+    .section-0__content-wrapper {
+        h1, h2, h3 {
+            font-size: 1.75rem;
+            line-height: normal;
+            margin-bottom: 0.625rem;
+        }
+
+        ul {
+            gap: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        a {
+            width: auto;
+        }
+    }
+}
+
+// Special case for internal applicants
+#internal-applicants .section-0__content-wrapper h3 {
+    line-height: 1.112;
+}
+
+// Section 0a variant
+.section-0a .section-0__wrapper {
+    max-width: 50rem;
+}
+
+// =====================================================
+// Arrow Link Styles
+// =====================================================
+
+.arrow-link {
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #072b61;
+    text-decoration: none;
+
+    &:after {
+        display: inline-block;
+        position: relative;
+        width: 0.5rem;
+        height: 0.5rem;
+        transform: rotate(135deg);
+        background: transparent;
+        border-top: 0.125rem solid #072b61;
+        border-left: 0.125rem solid #072b61;
+        transition: all 250ms ease-in-out;
+        text-decoration: none;
+        color: transparent;
+        content: " ";
+        left: 0.5rem;
+        top: -0.0625rem;
+        margin: 0 -1.25rem 0 0;
+    }
+
+    &:hover, &:focus {
+        text-decoration: underline;
+
+        &:after {
+            left: 0.875rem;
+        }
+    }
+}
+
+@media (max-width: 60rem) {
+    .arrow-link {
+        line-height: 1.5;
+        padding: 0 1.25rem;
+        font-size: 1rem;
+    }
+}
+
+// =====================================================
+// Spacing Utilities
+// =====================================================
+
+.marnno{
+    p{
+        margin-bottom: .5rem !important;
+    }
+}
+
+.margin-top-10 {
+    margin-block-start: 0.625rem !important;
+}
+
+.margin-top-15 {
+    margin-block-start: 0.9375rem !important;
+}
+
+.margin-top-20 {
+    margin-block-start: 1.25rem !important;
+}
+
+.margin-top-32 {
+    margin-block-start: 2rem !important;
+}
+
+// =====================================================
+// Color Swatch Styles
+// =====================================================
+
+.color-swatch {
+    display: inline-block;
+
+    .logo-list p {
+        margin-bottom: 0.3125rem !important;
+    }
+
+    .primary {
+        background: #0e1f49;
+    }
+
+    .secondary {
+        background: #14b8a6;
+    }
+}
+
+// Color swatch wrapper 1 - Logos
+.color-swatch__wrapper-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+
+    img {
+        max-width: 20rem;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .white-logo {
+        width: 20rem;
+        background-color: #0a1530;
+    
+    @media (max-width: 50rem) {
+        width: 10rem;
+    }
+
+        img {
+            padding: 0.625rem;
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+@media (max-width: 50rem) {
+    .color-swatch__wrapper-1 img {
+        width: 12.5rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+// Color swatch wrapper 2 - Color palettes
+.color-swatch__wrapper-2 {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .main-color {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    span:not(.disclaimer) {
+        width: 12rem;
+        height: 12rem;
+        display: inline-block;
+        margin-bottom: 0.75rem;
+        border-radius: 0.25rem;
+    }
+
+    p {
+        font-size: 0.75rem !important;
+    }
+
+    .small-colors {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+
+        .color-swatch {
+            display: inline-block;
+        }
+
+        span:not(.disclaimer) {
+            width: 6rem;
+            height: 6rem;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+        }
+
+        // Color definitions
+        .lightBlue { background-color: #0075c9; }
+        .teal { background-color: #27b1bd; }
+        .lightGreen { background-color: #6cb33e; }
+        .purple { background-color: #ad63a7; }
+        .orange { background-color: #f38f1d; }
+        .magenta { background-color: #e7488a; }
+        .coral { background-color: #e96557; }
+        .red { background-color: #d41f2a; }
+        .lightGrey { background-color: #d9d8d6; }
+        .black { background-color: #000; }
+        .mediumGrey { background-color: #757679; }
+    }
+}
+
+// Color swatch wrapper 3 - Buttons and backgrounds
+.color-swatch__wrapper-3 {
+    .groupbtn {
+        display: flex;
+        gap: 1.875rem;
+        margin-top: 10px;
+    }
+
+    .dark-bg {
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+        display: flex;
+        gap: 1.875rem;
+        margin-top: 0.9375rem;
+        margin-bottom: 0.9375rem;
+        flex-wrap: wrap;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    .bg-colors {
+        display: flex;
+        gap: 1.25rem;
+
+        > div {
+            width: 12.5rem;
+            height: 3.75rem;
+            text-align: center;
+            align-content: center;
+            border: 0.0625rem solid #e9e9e9;
+            color: #ffffff;
+        }
+    }
+}
+
+// =====================================================
+// Image Styles
+// =====================================================
+
+.image-wrap {
+    margin-block: 2rem 0;
+
+    img {
+        display: block;
+        border-radius: 10px;
+        margin-inline: auto;
+    }
+
+    & + :not(.image-caption) {
+        margin-block-start: 2rem;
+    }
+}
+
+.image-caption {
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: center;
+    margin-block: 0.625rem 0;
+
+    & + * {
+        margin-block-start: 2rem;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .image-wrap {
+        margin-block-start: 50px;
+
+        img {
+            max-inline-size: 90%;
+        }
+    }
+
+    .image-caption {
+        font-size: 1rem;
+        margin-block-start: 1.5625rem;
+        max-inline-size: 90%;
+        margin-inline: auto;
+    }
+}
+
+// =====================================================
+// Divider
+// =====================================================
+
+.divider {
+    block-size: 1px;
+    inline-size: 100%;
+    background-color: #757679;
+    margin-block: 2rem;
+}
+
+// =====================================================
+// Typography Utilities
+// =====================================================
+
+.heading-h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 800;
+    color: #0d1b3e;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+}
+
+.heading-h2 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 800;
+    color: #0d1b3e;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+
+    .text-gradient {
+        display: inline;
+        font-weight: 800;
+    }
+}
+
+.para-16 {
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #101820;
+    margin-block-end: 0.625rem;
+}
+
+// =====================================================
+// Text Color Utilities
+// =====================================================
+
+.dark-blue { color: #072b61 !important; }
+.medium-blue { color: #13477d !important; }
+.light-blue { color: #0075c9 !important; }
+.mediumGrey { color: #757679 !important; }
+.dark-black { color: #000 !important; }
+
+// =====================================================
+// Background Color Utilities
+// =====================================================
+
+.background-dark-blue { background-color: #0e1f49 !important; }
+.background-light-blue { background-color: #0e1f49 !important; }
+.background-golden-yellow { background-color: #f0ad00 !important; }
+.background-white { background-color: #ffffff !important; }
+.background-black { background-color: #000000 !important; }
+.background-ochsnerblue { background-color: #13477d; }
