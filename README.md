@@ -1,7 +1,8 @@
 # Simplify Healthcare
 
 ## Live Demo
-🔗 https://simplifyhealthcare.netlify.app/
+🔗 **Main Website:** https://simplifyhealthcare.netlify.app/
+🔗 **CMS Guide:** https://simplifyhealthcare.netlify.app/cms-guide
 
 ## Project Info
 A modern landing page for Connected AI Platform for Payer Operations. Built for healthcare payers to explore AI-powered solutions.
