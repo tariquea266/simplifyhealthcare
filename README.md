@@ -11,7 +11,10 @@ A modern landing page for Connected AI Platform for Payer Operations. Built for 
 
 ## Technologies Used
 - HTML5, CSS3, JavaScript
-- jQuery, Font Awesome
+- jQuery 3.6.0
+- Fancybox (Video Modal)
+- Font Awesome 6.5.1
+- Google Fonts (Inter)
 - Netlify (Hosting)
 - Git & GitHub
 
@@ -20,6 +23,9 @@ A modern landing page for Connected AI Platform for Payer Operations. Built for 
 - ✅ SEO Optimized
 - ✅ WCAG Accessible
 - ✅ Mobile Friendly
+- ✅ Video Modal (Fancybox)
+- ✅ Animated Counters
+- ✅ Auto-sliding Carousel
 - ✅ CMS Guide Included
 
 ## Project Structure
